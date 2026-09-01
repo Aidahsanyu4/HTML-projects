@@ -2,17 +2,16 @@
 
 A simple, clean web app to help manage and track mom's monthly allowance.
 
-I built this as part of my coding journey to practice HTML, CSS and JavaScript while solving a real family need.
+I built this as part of my coding journey to practice HTML and CSS while solving a real family need.
 
 ### ✨ Features
 - Track monthly allowance
-- Add expenses
 - See balance remaining
 - Clean and mobile-friendly design
 
 ### 🚀 Live Demo
-[View Live Site Here](https://aidahsany...github.io/moms-allowance/)
-*replace with your actual github-pages link*
+[View Live Site Here](https://aidahsanyu4github.io/moms-allowance/)
+
 
 ### 🛠️ Built With
 - HTML
