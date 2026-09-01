@@ -10,7 +10,7 @@ I built this as part of my coding journey to practice HTML and CSS while solving
 - Clean and mobile-friendly design
 
 ### 🚀 Live Demo
-[View Live Site [Here]()](https://aidahsanyu4.github.io/HTML-projects/moms-allowance/)
+[View Live Site Here]((https://aidahsanyu4.github.io/HTML-projects/moms-allowance/)
 
 
 ### 🛠️ Built With
