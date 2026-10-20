@@ -63,11 +63,46 @@
   <h3>Order Now</h3>
   <a class="button" href="mailto:aidahsanyu4@gmail.com">aidahsanyu4@gmail.com</a>
   <br><br>
-  <a class="button" href="https://wa.me/256705785895">Whatsapp</a>
+  <a class="button" href="https://wa.me/256792986677">Whatsapp</a>
   
   <p>Everyone is welcome ❤️</p>
       <p style="font-size:8px; opacity:0.9;">Photos by Pixabay, Arbiansyah Sulud & Ars Visions from Pexels</p>
     </footer>
+<script>
+let cart = [];
+let orderCount = 0;
+let total = 0;
+
+function addOrder(name, price) {
+  cart.push({name, price});
+  orderCount++;
+  total += price;
+
+  document.getElementById('order-count').innerText = orderCount;
+  document.getElementById('order-total').innerText = total.toLocaleString();
+  
+  localStorage.setItem('ntindaCart', JSON.stringify(cart));
+}
+
+function orderNow() {
+  if(cart.length === 0){
+    alert("Add at least one item first!");
+    return;
+  }
+  let message = "Hello Ntinda Cafe! I want to order:%0A";
+  cart.forEach(item => {
+    message += `- ${item.name} sh.${item.price}%0A`;
+  });
+  message += `%0ATotal: sh.${total} - ${orderCount} items`;
+  
+  window.open(`https://wa.me/256792986677?text=${message}`, '_blank');
+  
+  let totalOrdersEver = Number(localStorage.getItem('ordersEver') || 0) + 1;
+  localStorage.setItem('ordersEver', totalOrdersEver);
+  console.log("This is order number:", totalOrdersEver);
+}
+</script>
+    
 
   </body>
 </html>
