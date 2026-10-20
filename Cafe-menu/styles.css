@@ -67,6 +67,13 @@ span{
   font-weight: bold;
 }
 
+#cart-bar {
+  position: sticky;
+  padding: 10px;
+  top : 0;
+  z-index: 10;
+}
+
 @media (max-width: 600px) {
   body {
     padding: 10px;
