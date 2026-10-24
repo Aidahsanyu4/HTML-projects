@@ -53,12 +53,13 @@ p, .tagline {
 
 .hero-img{
   position: absolute;
-  left :120px;
+  left:120px;
   width: 40%;
   border-radius: 50px;
   display: block;
   margin: 10px 0;
   z-index: -1;
+  height: 20%;
 }
 
 #coffee div, #pastries div, #meals div{
