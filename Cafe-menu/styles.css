@@ -89,4 +89,11 @@ span{
   body {
     max-width: 700px;
   }
+  .hero-img {
+    border-radius: 40px;
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+    
+    
       }
