@@ -29,11 +29,12 @@ button, h3{
 }
 nav {
   display: flex;
-  flex-direction: column;
-  color: var(--dark-text);
+  flex-direction: row;
+  justify-content: space-between;
+  color: #fff;
 }
 #cart-bar{
-  color: var(--dark-text);
+  color: #fff;
 }
 
 a {
@@ -48,12 +49,12 @@ h2 {
 p, .tagline {
   font-style: italic;
   text-align: right;
-  color: var(--dark-text);
+  color: #fff;
 }
 
 .hero-img{
-  position: absolute;
-  left:120px;
+  display: flex;
+  align-item: center;
   width: 40%;
   border-radius: 50px;
   display: block;
@@ -99,7 +100,6 @@ span{
   .hero-img {
     border-radius: 50px;
     width: 30%;
-    display: block;
     margin: 0 auto;
   }
   }
