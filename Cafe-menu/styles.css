@@ -14,8 +14,6 @@ body{
   border: 5px solid grey;
   border-radius: 20px;
   width: 90%;
-  display: flex;
-  justify-content: center;
 }
 
 h1 {
