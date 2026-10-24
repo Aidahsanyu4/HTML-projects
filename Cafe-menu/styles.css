@@ -1,11 +1,11 @@
 :root{
   --gold: #D4AF37;
-  --light-blue: #E6F2FF;
+  --dark: #121212;
   --dark-text: #2B2B2B;
 }
 
 body{
-  background: var(--light-blue);
+  background: var(--dark);
   color: var(--dark-text);
   font-family: sans-serif;
   max-width: 600px;
