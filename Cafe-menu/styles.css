@@ -33,9 +33,6 @@ nav {
   justify-content: space-between;
   color: #fff;
 }
-#cart-bar{
-  color: #fff;
-}
 
 a {
   text-decoration: none;
@@ -78,8 +75,10 @@ span{
 #cart-bar {
   position: sticky;
   padding: 10px;
-  top : 0;
+  top: 0;
   z-index: 10;
+  color: #fff;
+  
 }
 
 @media (max-width: 600px) {
