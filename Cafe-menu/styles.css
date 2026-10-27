@@ -51,19 +51,21 @@ p, .tagline {
 .hero-img{
   display: block;
   position: absolute;
-  left: 120px;
+  right: 20px;
   width: 40%;
   border-radius: 50px;
   margin: 10px 0;
   z-index: -1;
-  height: 20%;
+  height: auto;
 }
 
 #coffee div, #pastries div, #meals div{
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-row: 1fr 120px;
+  gap: 10px;
+  align-items: center;
   border-bottom: 1px dashed #ccc;
-  padding: 5px 0;
+  padding: 15px;
 }
 
 span{
