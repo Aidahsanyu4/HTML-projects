@@ -83,7 +83,14 @@
       </p>
       <p class="extras">Served with <button> Coffee </button> <button>juice</button></p>
       <span>
-        <button>sh. 34500</button>
+      <p>
+  <button onclick="changeCart('Special Combo', 34500, -1)">-</button>
+  <span id="qty-Special Combo">0</span>
+  <button onclick="changeCart('Special Combo', 34500, 1)">+</button>
+</p>
+<p>
+  <button onclick="changeCart('Special Combo', 34500, 1)">Add - sh. 34500</button>
+</p>
       </span>
     </div>
     <!-- SEMI-REGULAR DISH -->
