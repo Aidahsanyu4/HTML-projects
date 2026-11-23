@@ -57,7 +57,12 @@
         A proper morning plate: a pair of sizzling sausages, a sunny fried egg, golden home fries, crisp house salad and warm toasted bread.
       </p>
 
-      <p class="extras">Served with <button> Coffee </button><button> Tea</button></p>
+      <p class="extras">Served with:</p>
+<p>
+  <button onclick="pickDrink('Coffee', this)">Coffee</button>
+  <button onclick="pickDrink('Tea', this)">Tea</button>
+</p>
+<p>Chosen: <span id="drink-choice">None yet</span></p>
 
       <span>
         <p>
@@ -81,7 +86,12 @@
       <p>
         Juicy grilled chicken breast with sweet roasted plantain, toast and creamy avocado, soft poached eggs and steamed spinach served with juice & coffee.
       </p>
-      <p class="extras">Served with <button> Coffee </button> <button>juice</button></p>
+      <p class="extras">Served with:</p>
+<p>
+  <button onclick="pickDrink('Coffee', this)">Coffee</button>
+  <button onclick="pickDrink('Juice', this)">Juice</button>
+</p>
+<p>Chosen: <span id="drink-choice">None yet</span></p>
       <span>
       <p>
   <button onclick="changeCart('Special Combo', 34500, -1)">-</button>
