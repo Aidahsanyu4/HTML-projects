@@ -60,7 +60,14 @@
       <p class="extras">Served with <button> Coffee </button><button> Tea</button></p>
 
       <span>
-        <button>sh. 25000</button>
+        <p>
+  <button onclick="changeCart('Mer Breakfast', 25000, -1)">-</button>
+  <span id="qty-Mer Breakfast">0</span>
+  <button onclick="changeCart('Mer Breakfast', 25000, 1)">+</button>
+</p>
+<p>
+  <button onclick="changeCart('Mer Breakfast', 25000, 1)">Add - sh. 25000</button>
+</p>
       </span>
       <img src="breakfast.jpg">
     </div>
