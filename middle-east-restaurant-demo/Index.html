@@ -103,7 +103,14 @@
         A colourful platter of fresh-cut fruit - light, juicy and naturally sweet.
       </p>
       <span>
-        <button>sh. 18000</button>
+        <p>
+  <button onclick="changeCart('Fruit Platter', 18000, -1)">-</button>
+  <span id="qty-Fruit Platter">0</span>
+  <button onclick="changeCart('Fruit Platter', 18000, 1)">+</button>
+</p>
+<p>
+  <button onclick="changeCart('Fruit Platter', 18000, 1)">Add - sh. 18000</button>
+</p>
       </span>
       <img src="fruit-platter.jpg">
 
