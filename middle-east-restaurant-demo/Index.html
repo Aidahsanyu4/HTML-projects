@@ -115,16 +115,39 @@
       <img src="fruit-platter.jpg">
 
       <!-- EXTRAS -->
-      <div>
-        <h3 class="extras">ADDITIONAL ON EXTRA</h3>
+<div>
+  <h3 class="extras">ADDITIONAL ON EXTRA</h3>
 
-        <p>Add coleslaw <span><button>+ sh. 5500</button></span></p>
-        <p>Add small fruit bowl <span><button>+ sh. 6500</button></span></p>
-        <p>Add 1000 Island <span><button>+ sh. 5500</button></span></p>
-        <p>Add lactose-free milk <span><button>+ sh. 6000</button></span></p>
-        <p>Add pair of sausages <span><button>+ sh. 9500</button></span></p>
-      </div>
-    </div>
+  <p>Coleslaw - sh. 5500
+    <button onclick="changeCart('Coleslaw', 5500, -1)">-</button>
+    <span>0</span>
+    <button onclick="changeCart('Coleslaw', 5500, 1)">+</button>
+  </p>
+
+  <p>Small fruit bowl - sh. 6500
+    <button onclick="changeCart('Fruit Bowl', 6500, -1)">-</button>
+    <span>0</span>
+    <button onclick="changeCart('Fruit Bowl', 6500, 1)">+</button>
+  </p>
+
+  <p>1000 Island - sh. 5500
+    <button onclick="changeCart('1000 Island', 5500, -1)">-</button>
+    <span>0</span>
+    <button onclick="changeCart('1000 Island', 5500, 1)">+</button>
+  </p>
+
+  <p>Lactose-free milk - sh. 6000
+    <button onclick="changeCart('Lactose Milk', 6000, -1)">-</button>
+    <span>0</span>
+    <button onclick="changeCart('Lactose Milk', 6000, 1)">+</button>
+  </p>
+
+  <p>Pair of sausages - sh. 9500
+    <button onclick="changeCart('Sausages', 9500, -1)">-</button>
+    <span>0</span>
+    <button onclick="changeCart('Sausages', 9500, 1)">+</button>
+  </p>
+</div>
 
   </div>
   </main>
