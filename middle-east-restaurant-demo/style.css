@@ -55,14 +55,19 @@ button[onclick*=", 1)"] {
 
 button:active { transform: scale(0.95); }
 
-.mer-signture {
+.mer-signature {
   background: var(--mer-black);
 }
 
 h1 {
   color: var(--mer-yellow);
   font-weight: bold;
-  font-size: 24px;
+  font-size: 30px;
+}
+
+h2 {
+  color: var(--mer-yellow);
+  font-size: 20px;
 }
 
 .main-dish {
@@ -74,12 +79,12 @@ h1 {
   text-align: center;
 }
 
-.food-box.yellow {
+.regular-dish {
   background: var(--mer-yellow);
   color: var(--mer-black);
 }
 
-.regular-dish {
+.semi-regular {
   background: var(--mer-black);
   color: var(--mer-white);
 }
@@ -96,6 +101,7 @@ h3 { color: var(--mer-black); margin: 5px 0; }
   gap: 15px;
   padding: 15px;
 }
+
 
 /* TABLET - 2 columns */
 @media (min-width: 768px) {
