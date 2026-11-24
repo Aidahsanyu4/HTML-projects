@@ -30,6 +30,7 @@ img {
   width: 100%;
   border-radius: 15px;
   margin-bottom: 10px;
+  border: 2px, solid, var(--mer-white);
 }
 
 button {
@@ -54,8 +55,12 @@ button[onclick*=", 1)"] {
 
 button:active { transform: scale(0.95); }
 
+.mer-signature {
+  background: var(--mer-black);
+}
+
 .main-dish {
-  background: var(--mer-white);
+  background: var(--mer-yellow);
   padding: 15px;
   border-radius: 15px;
   margin: 15px 0;
@@ -68,12 +73,12 @@ button:active { transform: scale(0.95); }
   color: var(--mer-black);
 }
 
-.food-box.black {
+.regular-dish {
   background: var(--mer-black);
   color: var(--mer-white);
 }
 
-.food-box.black h3 { color: var(--mer-white); }
+.regular-dish h3 { color: var(--mer-white); }
 
 h3 { color: var(--mer-black); margin: 5px 0; }
 .extras { color: var(--mer-brown); font-size: 14px;
