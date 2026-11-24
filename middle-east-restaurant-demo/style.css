@@ -1,0 +1,79 @@
+:root {
+  --mer-yellow: #FFE600;
+  --mer-black: #111111;
+  --mer-white: #FFFFFF;
+  --mer-cream: #FFF8E7;
+  --mer-gold: #C9A227;
+  --mer-brown: #8B4513;
+  --mer-grey: #777777;
+}
+
+#cart-bar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  background: var(--mer-black);
+  color: var(--mer-white);
+  padding: 12px;
+  text-align: center;
+  font-weight: bold;
+  z-index: 100;
+}
+
+body {
+  padding-top: 50px;
+  font-family: Arial, sans-serif;
+  background: var(--mer-white);
+  color: var(--mer-black);
+}
+
+img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+button {
+  background: var(--mer-gold);
+  color: var(--mer-white);
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 3px;
+}
+
+button[onclick*="-1"],
+button[onclick*=", 1)"] {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+button:active { transform: scale(0.95); }
+
+.food-box {
+  background: var(--mer-white);
+  padding: 15px;
+  border-radius: 15px;
+  margin: 15px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.food-box.yellow {
+  background: var(--mer-yellow);
+  color: var(--mer-black);
+}
+
+.food-box.black {
+  background: var(--mer-black);
+  color: var(--mer-white);
+}
+
+.food-box.black h3 { color: var(--mer-white); }
+
+h3 { color: var(--mer-black); margin: 5px 0; }
+.extras { color: var(--mer-brown); font-size: 14px; }
