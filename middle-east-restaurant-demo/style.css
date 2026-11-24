@@ -55,8 +55,14 @@ button[onclick*=", 1)"] {
 
 button:active { transform: scale(0.95); }
 
-.mer-signature {
+.mer-signture {
   background: var(--mer-black);
+}
+
+h1 {
+  color: var(--mer-yellow);
+  font-weight: bold;
+  font-size: 24px;
 }
 
 .main-dish {
@@ -84,7 +90,7 @@ h3 { color: var(--mer-black); margin: 5px 0; }
 .extras { color: var(--mer-brown); font-size: 14px;
         }
 
-.menu-grid {
+.main-dish.regular-dish.semi-regular{
   display: flex;
   flex-direction: column;
   gap: 15px;
