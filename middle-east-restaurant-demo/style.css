@@ -27,7 +27,8 @@ body {
 }
 
 img {
-  width: 100%;
+  height: auto;
+  position: relative;
   border-radius: 15px;
   margin-bottom: 10px;
   border: 2px, solid, var(--mer-white);
@@ -102,6 +103,28 @@ h3 { color: var(--mer-black); margin: 5px 0; }
   padding: 15px;
 }
 
+#mer-signature {
+  background-color: var(--mer-black);
+}
+
+.mer-signature-img {
+  width: 70%
+  right: 4px;
+}
+
+.main-dish-img {
+  width: 55%;
+  right: 15px;
+}
+
+.regular-dish-img {
+  width: 40%;
+  right: 25px;
+}
+ 
+.semi-regular-img {
+  width: 30%;
+  right: 40px;
 
 /* TABLET - 2 columns */
 @media (min-width: 768px) {
