@@ -70,7 +70,7 @@ h1 {
 }
 nav {
   display: flex;
-  flex-direction:column!
+  flex-direction: column;
 }
 .nav-bar {
   background-color: var(--mer-black);
@@ -102,16 +102,21 @@ h2 {
   margin: 15px 0;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   text-align: center;
+  opacity: 0.5;
 }
 
 .regular-dish {
   background: var(--mer-yellow);
   color: var(--mer-black);
+  opacity: 0.5;
+  border-radius: 15px;
 }
 
 .semi-regular {
   background: var(--mer-black);
   color: var(--mer-white);
+  opacity: 0.5;
+  border-radius: 15px;
 }
 
 .regular-dish h3 { color: var(--mer-white); }
@@ -125,8 +130,6 @@ h3 { color: var(--mer-black); margin: 5px 0; }
   grid-template-column: 1fr, 1fr;
   gap: 15px;
   padding: 15px;
-  opacity: 0.5;
-  border-radius: 20px;
 }
 
 #mer-signature {
