@@ -30,7 +30,7 @@ body {
 
 img {
   height: auto;
-  position: absolute;
+  position: relative;
   border-radius: 15px;
   margin-bottom: 10px;
   border: 2px, solid, var(--mer-white);
