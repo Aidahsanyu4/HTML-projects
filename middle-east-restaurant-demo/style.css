@@ -20,6 +20,8 @@
 }
 
 body {
+  width: 90vw;
+  height: 90vh,;
   padding-top: 50px;
   font-family: Arial, sans-serif;
   background: var(--mer-white);
