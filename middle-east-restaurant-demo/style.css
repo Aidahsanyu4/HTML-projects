@@ -28,7 +28,7 @@ body {
 
 img {
   height: auto;
-  position: relative;
+  position: absolute;
   border-radius: 15px;
   margin-bottom: 10px;
   border: 2px, solid, var(--mer-white);
@@ -97,8 +97,8 @@ h3 { color: var(--mer-black); margin: 5px 0; }
         }
 
 .main-dish.regular-dish.semi-regular{
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-column: 1fr, 1fr;
   gap: 15px;
   padding: 15px;
 }
@@ -108,39 +108,34 @@ h3 { color: var(--mer-black); margin: 5px 0; }
 }
 
 .mer-signature-img {
-  width: 70%
+  width: 70vw;
   right: 4px;
 }
 
 .main-dish-img {
-  width: 55%;
+  width: 55vw;
   right: 15px;
 }
 
 .regular-dish-img {
-  width: 40%;
+  width: 40vw;
   right: 25px;
 }
  
 .semi-regular-img {
-  width: 30%;
+  width: 30wv;
   right: 40px;
 
 /* TABLET - 2 columns */
 @media (min-width: 768px) {
-  .menu-grid {
+  .main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     max-width: 900px;
-    margin: 0 auto;
-  }
+    margin: 0 auto;}
 
-  .food-box {
-    margin: 0;
-  }
-
-  #cart-bar {
+  #cart {
     font-size: 18px;
     padding: 15px;
   }
@@ -153,18 +148,13 @@ h3 { color: var(--mer-black); margin: 5px 0; }
 
 /* LAPTOP / DESKTOP - 3 columns */
 @media (min-width: 1024px) {
-  .menu-grid {
+  .main {
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 1200px;
     gap: 25px;
   }
 
-  .food-box {
-    padding: 20px;
-  }
-
-  .food-box img {
-    height: 200px;
+  img {
     object-fit: cover;
   }
 
