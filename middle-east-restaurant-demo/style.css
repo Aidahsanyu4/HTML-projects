@@ -65,6 +65,19 @@ h1 {
   font-weight: bold;
   font-size: 30px;
 }
+nav {
+  display: flex;
+  flex-direction:column;
+}
+
+p {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: var(--mer-cream);
+}
 
 h2 {
   color: var(--mer-yellow);
