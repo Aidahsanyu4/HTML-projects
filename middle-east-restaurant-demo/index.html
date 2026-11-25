@@ -1,4 +1,4 @@
-it is a doctor<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -23,8 +23,8 @@ it is a doctor<!DOCTYPE html>
     </div>
 
     <div id="cart-bar">
-      🛒 Orders: <span id="order-count">0</span> | 
-      Total: sh. <span id="order-total">0</span>
+      🛒 Orders: <span id="cart">0</span> | 
+      Total: sh. <span id="total">0</span>
     </div>
                   </header>
   <main class="main">
@@ -102,7 +102,7 @@ it is a doctor<!DOCTYPE html>
   <button onclick="changeCart('Special Combo', 34500, 1)">Add - sh. 34500</button>
 </p>
       </span>
-      <img class="regular-dish-img see you Atmos let's chill Regina Indiana" src="https://images.pexels.com/photos/15076697/pexels-photo-15076697.jpeg">
+      <img class="regular-dish-img" src="https://images.pexels.com/photos/15076697/pexels-photo-15076697.jpeg">
     </div>
     <!-- SEMI-REGULAR DISH -->
     <div class="semi-regular">
@@ -193,7 +193,7 @@ function updateTotal() {
 }
 
 function sendOrder() {
-  let myNumber = "256792986677"; // <-- put YOUR WhatsApp number here my love
+  let myNumber = "256792986677"; 
   let message = "Hello Middle East Restaurant! My order:\n";
   for (let item in cart) {
     message += item + " x " + cart[item].qty + " = " + (cart[item].qty * cart[item].price) + "\n";
