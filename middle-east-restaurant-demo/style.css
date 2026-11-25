@@ -24,7 +24,7 @@ body {
   height: 90vh,;
   padding-top: 50px;
   font-family: Arial, sans-serif;
-  background: var(--mer-white);
+  background: var(--mer-black);
   color: var(--mer-black);
 }
 
@@ -120,10 +120,12 @@ h3 { color: var(--mer-black); margin: 5px 0; }
   grid-template-column: 1fr, 1fr;
   gap: 15px;
   padding: 15px;
+  opacity: 0.5;
 }
 
 #mer-signature {
   background-color: var(--mer-black);
+  opacity: 0.5;
 }
 
 .mer-signature-img {
