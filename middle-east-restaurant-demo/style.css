@@ -91,6 +91,10 @@ h2 {
   font-size: 20px;
 }
 
+.big {
+  font-size: 35px;
+}
+
 .main-dish {
   background: var(--mer-white);
   padding: 15px;
