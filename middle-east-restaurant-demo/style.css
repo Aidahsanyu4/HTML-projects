@@ -138,6 +138,7 @@ h3 { color: var(--mer-black); margin: 5px 0; }
 #mer-signature {
   background-color: var(--mer-black);
   opacity: 0.5;
+  color: var(--mer-white);
 }
 
 .mer-signature-img {
