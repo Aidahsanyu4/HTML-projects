@@ -37,7 +37,6 @@ body {
 img {
   height: auto;
   position: relative;
-  z-index: -5;
   border-radius: 15px;
   margin-bottom: 10px;
   border: 2px, solid, var(--mer-white);
@@ -82,11 +81,6 @@ nav {
   background-color: var(--mer-black);
 }
 
-p {
-  flex: 1;
-  text-align: center;
-}
-
 a {
   text-decoration: none;
   color: var(--mer-cream);
@@ -110,21 +104,18 @@ h2 {
   margin: 15px 0;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   text-align: center;
-  opacity: 0.5;
   width: 88vw;
 }
 
 .regular-dish {
   background: var(--mer-yellow);
   color: var(--mer-black);
-  opacity: 0.5;
   border-radius: 15px;
 }
 
 .semi-regular {
   background: var(--mer-black);
   color: var(--mer-white);
-  opacity: 0.5;
   border-radius: 15px;
 }
 
@@ -153,7 +144,6 @@ h3 { color: var(--mer-black); margin: 5px 0; }
 
 #mer-signature {
   background-color: var(--mer-black);
-  opacity: 0.5;
 }
 
 .mer-signature-img {
@@ -173,7 +163,7 @@ h3 { color: var(--mer-black); margin: 5px 0; }
  
 .semi-regular-img {
   width: 30vw;
-  right: 40px;
+  right: 40px;}
 
 /* TABLET - 2 columns */
 @media (min-width: 768px) {
