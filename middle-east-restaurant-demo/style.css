@@ -127,7 +127,7 @@ h3 { color: var(--mer-black); margin: 5px 0; }
 .extras { color: var(--mer-brown); font-size: 14px;
         }
 
-.main-dish.regular-dish.semi-regular{
+.main-dish, .regular-dish, .semi-regular{
   display: flex;
   justify-content: space-between;
   align-items: center;
