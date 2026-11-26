@@ -19,6 +19,12 @@
   z-index: 100;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
 body {
   width: 90vw;
   height: 90vh,;
@@ -127,13 +133,22 @@ h3 { color: var(--mer-black); margin: 5px 0; }
 .extras { color: var(--mer-brown); font-size: 14px;
         }
 
-.main-dish, .regular-dish, .semi-regular{
+.main-dish, .regular-dish, .semi-regular, #mer-signature{
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 15px;
   padding: 15px;
-}
+  width: 100%;
+  box-sizing: border-box;}
+
+.main-dish p,
+.regular-dish p,
+.semi-regular p,
+#mer-signature p {
+  flex: 1;
+  min-width: 0;
+  }
 
 #mer-signature {
   background-color: var(--mer-black);
