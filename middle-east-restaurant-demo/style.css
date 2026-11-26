@@ -26,20 +26,22 @@
 }
 
 body {
-  width: 90vw;
-  height: 90vh,;
+  width: 100%;
   padding-top: 50px;
   font-family: Arial, sans-serif;
   background: var(--mer-black);
   color: var(--mer-black);
+  margin: 0;
+  box-sizing: border-box;
 }
 
 img {
   height: auto;
-  position: relative;
   border-radius: 15px;
   margin-bottom: 10px;
-  border: 2px, solid, var(--mer-white);
+  border: 2px solid var(--mer-white);
+  max-width: 100%;
+  display: block;
 }
 
 button {
@@ -81,6 +83,10 @@ nav {
   background-color: var(--mer-black);
 }
 
+p {
+  text-align: left;
+}
+
 a {
   text-decoration: none;
   color: var(--mer-cream);
@@ -103,67 +109,82 @@ h2 {
   border-radius: 15px;
   margin: 15px 0;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  text-align: center;
-  width: 88vw;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .regular-dish {
   background: var(--mer-yellow);
   color: var(--mer-black);
   border-radius: 15px;
+  padding: 15px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .semi-regular {
   background: var(--mer-black);
   color: var(--mer-white);
   border-radius: 15px;
+  padding: 15px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .regular-dish h3 { color: var(--mer-white); }
 
 h3 { color: var(--mer-black); margin: 5px 0; }
-.extras { color: var(--mer-brown); font-size: 14px;
-        }
+.extras { color: var(--mer-brown); font-size: 14px; }
 
-.main-dish, .regular-dish, .semi-regular, #mer-signature{
+/* ONLY the inner layouts are flex - NOT the cards */
+.main-dish {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   gap: 15px;
-  padding: 15px;
-  width: 100%;
-  box-sizing: border-box;}
+}
 
-.main-dish p,
-.regular-dish p,
-.semi-regular p,
-#mer-signature p {
-  flex: 1;
-  min-width: 0;
-  }
+.fruit-layout {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: flex-start;
+}
 
 #mer-signature {
   background-color: var(--mer-black);
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: flex-start;
 }
 
 .mer-signature-img {
-  width: 70vw;
-  right: 4px;
+  width: 100%;
 }
 
 .main-dish-img {
-  width: 55vw;
-  right: 15px;
+  width: 100%;
 }
 
 .regular-dish-img {
-  width: 40vw;
-  right: 25px;
+  width: 100%;
 }
- 
+
 .semi-regular-img {
-  width: 30vw;
-  right: 40px;}
+  width: 100%;
+}
+
+/* The 2-column / 3-column divs inside cards */
+.dish-text, .dish-image,
+.fruit-text, .fruit-buttons-img, .fruit-extras {
+  flex: 1;
+  min-width: 0;
+}
 
 /* TABLET - 2 columns */
 @media (min-width: 768px) {
@@ -172,7 +193,8 @@ h3 { color: var(--mer-black); margin: 5px 0; }
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     max-width: 900px;
-    margin: 0 auto;}
+    margin: 0 auto;
+  }
 
   #cart {
     font-size: 18px;
@@ -201,4 +223,3 @@ h3 { color: var(--mer-black); margin: 5px 0; }
     font-size: 22px;
   }
 }
-
