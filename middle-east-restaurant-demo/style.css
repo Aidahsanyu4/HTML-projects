@@ -36,10 +36,10 @@ a {
   flex-direction: column;
   gap: 15px;
 }
-/* 1. Add breathing room around the page edges */
+  
 body {
   width: 100%;
-  padding: 60px 12px 24px 12px; /* Top padding clears fixed #cart-bar, 12px side padding */
+  padding: 60px 12px 24px 12px; 
   font-family: Arial, sans-serif;
   background: var(--mer-black);
   color: var(--mer-black);
@@ -47,7 +47,6 @@ body {
   box-sizing: border-box;
 }
 
-/* 2. Center +/- symbols properly inside circular buttons */
 button {
   background: var(--mer-gold);
   color: var(--mer-white);
@@ -58,7 +57,7 @@ button {
   font-weight: bold;
   cursor: pointer;
   margin: 3px;
-  white-space: nowrap; /* Prevents "Add" from ever clipping or wrapping */
+  white-space: nowrap; 
 }
 
 button[onclick*="-1"],
@@ -68,14 +67,13 @@ button[onclick*=", 1)"] {
   justify-content: center;
   width: 38px;
   height: 38px;
-  padding: 0; /* Removes the 14px side padding that pushed +/- off-center */
+  padding: 0; 
   border-radius: 50%;
   font-size: 18px;
 }
 
 button:active { transform: scale(0.95); }
 
-/* 3. Fix invisible white-on-yellow heading contrast */
 .regular-dish {
   background: var(--mer-yellow);
   color: var(--mer-black);
@@ -86,15 +84,14 @@ button:active { transform: scale(0.95); }
 }
 
 .regular-dish h3 {
-  color: var(--mer-black); /* Changed from white so it's readable on yellow */
+  color: var(--mer-black); 
 }
-
 
 .main-dish {
   background: var(--mer-white);
   padding: 16px;
   border-radius: 15px;
-  margin: 0; /* Let .main's gap: 15px handle card spacing consistently */
+  margin: 0; 
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
@@ -105,7 +102,6 @@ button:active { transform: scale(0.95); }
   padding: 10px;
 }
 
-/* ONE layout for ALL - Coffee, Breakfast, Fruit, Drumsticks */
 .main-dish,
 .regular-dish,
 .semi-regular,
@@ -131,8 +127,8 @@ button:active { transform: scale(0.95); }
 .regular-dish-img,
 .semi-regular-img,
 #mer-signature-img {
-  width: 100px;
-  height: 100px;
+  width: 30vw;
+  height: 30vh;
   object-fit: cover;
   grid-column: 2;
   grid-row: 1;
