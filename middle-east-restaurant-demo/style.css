@@ -24,7 +24,8 @@ nav-bar{
   color: var(--mer-cream);
 }
 a {
-  text-decrotion: none;
+  color: var(--mer-cream);
+  text-decoration: none;
 }
 
 .big {
