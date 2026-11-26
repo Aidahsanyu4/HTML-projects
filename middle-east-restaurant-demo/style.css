@@ -210,3 +210,42 @@ h3 { color: var(--mer-black); margin: 5px 0; }
     font-size: 22px;
   }
 }
+/* --- BREAKFAST FIX - PASTE AT BOTTOM --- */
+#breakfast {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#breakfast .main-dish {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-items: flex-start !important;
+  gap: 16px !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  text-align: left !important;
+}
+
+#breakfast .dish-text {
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+  max-width: none !important;
+}
+
+#breakfast .dish-text h3,
+#breakfast .dish-text p {
+  width: 100% !important;
+  max-width: none !important;
+  white-space: normal !important;
+  text-align: left !important;
+}
+
+#breakfast .main-dish-img {
+  width: 130px !important;
+  height: auto !important;
+  flex-shrink: 0 !important;
+  border-radius: 10px;
+  display: block;
+}
