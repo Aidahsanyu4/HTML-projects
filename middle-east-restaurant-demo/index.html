@@ -105,60 +105,70 @@
       </span>
       <img class="regular-dish-img" src="https://images.pexels.com/photos/15076697/pexels-photo-15076697.jpeg">
     </div>
-    <!-- SEMI-REGULAR DISH -->
-    <div class="semi-regular">
+    
+    <!-- FRUIT SELECTION -->
+<div class="semi-regular">
+  <div class="fruit-layout">
+
+    <!-- DIV 1 - TEXT ONLY -->
+    <div class="fruit-text">
       <h3>Fruit Selection</h3>
-      <span>
-        FRUIT PLATTER
-      </span>
+      <span>FRUIT PLATTER</span>
       <p>
         A colourful platter of fresh-cut fruit - light, juicy and naturally sweet.
       </p>
-      <span>
-        <p>sh 18000
-  <button onclick="changeCart('Fruit Platter', 18000, -1)">-</button>
-  <span id="qty-Fruit Platter">0</span>
-  <button onclick="changeCart('Fruit Platter', 18000, 1)">+</button>
-</p>
-<p>
-  <button onclick="changeCart('Fruit Platter', 18000, 1)">Add - sh. 18000</button>
-</p>
-      </span>
+      <p>sh 18000</p>
+    </div>
+
+    <!-- DIV 2 - BUTTONS + IMAGE -->
+    <div class="fruit-buttons-img">
+      <p>
+        <button onclick="changeCart('Fruit Platter', 18000, -1)">-</button>
+        <span id="qty-Fruit Platter">0</span>
+        <button onclick="changeCart('Fruit Platter', 18000, 1)">+</button>
+      </p>
+      <p>
+        <button onclick="changeCart('Fruit Platter', 18000, 1)">Add - sh. 18000</button>
+      </p>
       <img class="semi-regular-img" src="https://images.pexels.com/photos/27583260/pexels-photo-27583260.jpeg" alt="fruit-platter.jpg">
+    </div>
 
-      <!-- EXTRAS -->
-<div>
-  <h3 class="extras">ADDITIONAL ON EXTRA</h3>
+    <!-- DIV 3 - EXTRAS ONLY -->
+    <div class="fruit-extras">
+      <h3 class="extras">ADDITIONAL ON EXTRA</h3>
 
-  <p>Coleslaw - sh. 5500
-    <button onclick="changeCart('Coleslaw', 5500, -1)">-</button>
-    <span>0</span>
-    <button onclick="changeCart('Coleslaw', 5500, 1)">+</button>
-  </p>
+      <p>Coleslaw - sh. 5500
+        <button onclick="changeCart('Coleslaw', 5500, -1)">-</button>
+        <span id="qty-Coleslaw">0</span>
+        <button onclick="changeCart('Coleslaw', 5500, 1)">+</button>
+      </p>
 
-  <p>Small fruit bowl - sh. 6500
-    <button onclick="changeCart('Fruit Bowl', 6500, -1)">-</button>
-    <span>0</span>
-    <button onclick="changeCart('Fruit Bowl', 6500, 1)">+</button>
-  </p>
+      <p>Small fruit bowl - sh. 6500
+        <button onclick="changeCart('Fruit Bowl', 6500, -1)">-</button>
+        <span id="qty-Fruit Bowl">0</span>
+        <button onclick="changeCart('Fruit Bowl', 6500, 1)">+</button>
+      </p>
 
-  <p>1000 Island - sh. 5500
-    <button onclick="changeCart('1000 Island', 5500, -1)">-</button>
-    <span>0</span>
-    <button onclick="changeCart('1000 Island', 5500, 1)">+</button>
-  </p>
+      <p>1000 Island - sh. 5500
+        <button onclick="changeCart('1000 Island', 5500, -1)">-</button>
+        <span id="qty-1000 Island">0</span>
+        <button onclick="changeCart('1000 Island', 5500, 1)">+</button>
+      </p>
 
-  <p>Lactose-free milk - sh. 6000
-    <button onclick="changeCart('Lactose Milk', 6000, -1)">-</button>
-    <span>0</span>
-    <button onclick="changeCart('Lactose Milk', 6000, 1)">+</button>
-  </p>
+      <p>Lactose-free milk - sh. 6000
+        <button onclick="changeCart('Lactose Milk', 6000, -1)">-</button>
+        <span id="qty-Lactose Milk">0</span>
+        <button onclick="changeCart('Lactose Milk', 6000, 1)">+</button>
+      </p>
 
-  <p>Pair of sausages - sh. 9500
-    <button onclick="changeCart('Sausages', 9500, -1)">-</button>
-    <span>0</span>
-    <button onclick="changeCart('Sausages', 9500, 1)">+</button>
-  </p>
+      <p>Pair of sausages - sh. 9500
+        <button onclick="changeCart('Sausages', 9500, -1)">-</button>
+        <span id="qty-Sausages">0</span>
+        <button onclick="changeCart('Sausages', 9500, 1)">+</button>
+      </p>
+    </div>
+
+  </div>
 </div>
 
   </div>
