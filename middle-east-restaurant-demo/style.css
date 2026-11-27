@@ -31,7 +31,11 @@ a {
 .big {
   color: var(--mer-yellow);
 }
-  
+  .main {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
 body {
   width: 100%;
   padding: 60px 12px 24px 12px; 
@@ -127,6 +131,7 @@ button:active { transform: scale(0.95); }
   object-fit: cover;
   grid-column: 2;
   grid-row: 1;
+  border-radius: 50%;
 }
 
 /* TABLET - 2 columns */
