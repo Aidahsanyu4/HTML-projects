@@ -80,7 +80,7 @@ button:active { transform: scale(0.95); }
   padding: 16px;
   width: 100%;
   box-sizing: border-box;
-}
+} /*stopped here*/
 
 .regular-dish h3 {
   color: var(--mer-black); 
